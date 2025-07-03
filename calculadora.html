@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="calculadora.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+            <div class="logo">
+              <h2>BusExpress</h2>
+            </div>
+            <div class="menu-items">
+              <li><a href="tela1-index.html">Inicio</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+
+      <div class="card">
+        <a href="https://www.instagram.com/busexpressetpc/" class="socialContainer containerOne" target="_blank">
+          <i class="fa-brands fa-instagram socialIcon"></i>
+        </a>
+        
+        </a>
+        <a href="https://github.com/BusExpress01/BusExpress." class="socialContainer containerThree" target="_blank">
+          <i class="fa-brands fa-github socialIcon"></i>
+        </a>
+        
+        </a>
+      </div>
+
+
+
+      <div class="master">
+        <div class="calculadora">
+            <h1>Calculadora saldo</h1>
+            <label for="saldoAtual">Saldo atual:</label>
+            <input type="number" id="saldoAtual" placeholder="Digite o saldo atual" />
+    
+            <label for="valorPassagem">Valor da passagem:</label>
+            <input type="number" id="valorPassagem" placeholder="Digite o valor da passagem" />
+    
+            <label>
+                <input type="checkbox" id="estudante" />
+                Passagem com 50% de desconto
+            </label>
+    
+            <button onclick="calcularSaldo()">Calcular Saldo</button>
+    
+            <div id="resultado" class="result"></div>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+</body>
+</html>

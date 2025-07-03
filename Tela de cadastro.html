@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tela de Cadastro</title>
+  <script>
+    function cadastrar() {
+      var nome = document.getElementById("nome").value;
+      var email = document.getElementById("email").value;
+      var senha = document.getElementById("senha").value;
+
+      // Verifica se todos os campos foram preenchidos
+      if (nome !== "" && email !== "" && senha !== "") {
+        // Salva os dados no armazenamento local (localStorage)
+        localStorage.setItem("nome", nome);
+        localStorage.setItem("email", email);
+        localStorage.setItem("senha", senha);
+
+        alert("Cadastro realizado com sucesso!");
+
+        // Redireciona para outra página após o cadastro
+        window.location.href = "Horario.html";
+      } else {
+        alert("Por favor, preencha todos os campos.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Tela de Cadastro</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha"><br><br>
+    <button type="button" onclick="cadastrar()">Cadastrar</button>
+  </form>
+</body>
+</html>
